@@ -9,9 +9,9 @@ use Symfony\Component\Process\Process;
 require_once __DIR__ . '/../../vendor/autoload.php';
 
 $layers = [
-    'php-73' => 'PHP 7.3 for PHP functions',
-    'php-73-fpm' => 'PHP-FPM 7.3 for HTTP applications',
-    'console' => 'Console runtime for PHP applications',
+    'test-php-73' => 'PHP 7.3 for PHP functions',
+    'test-php-73-fpm' => 'PHP-FPM 7.3 for HTTP applications',
+    'test-console' => 'Console runtime for PHP applications',
 ];
 foreach ($layers as $layer => $layerDescription) {
     $file = __DIR__ . "/../export/$layer.zip";

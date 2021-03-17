@@ -12,6 +12,7 @@ abstract class HttpHandler implements Handler
     /** {@inheritDoc} */
     public function handle($event, Context $context): array
     {
+        var_dump($event);
         // See https://bref.sh/docs/runtimes/http.html#cold-starts
         if (isset($event['warmer']) && $event['warmer'] === true) {
             return ['Lambda is warm'];
